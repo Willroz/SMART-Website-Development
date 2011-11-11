@@ -1,0 +1,11 @@
+Initial Documentation v.04
+
+h1. Getting Started
+
+This installation of Redmine is 'connected' to my personal repository on GitHub. This is one-way traffic. Do not attempt to modify any files and commit them to the repository from here. If you need to make edits or revisions to a file, you must download it to your local machine, make your edits/revisions, and commit them back to the repository from there.
+
+Each individual project in this management system can have it's own repository. Sub-projects, or 'children' of the master or 'parent' must use the repository for the parent. GitHub does not allow for nesting of repositories. My GitHub account is 'Willroz'. Let's say that the repository that is connected to this project is called 'Project1'. This makes the path to that repository 'Willroz/Project1'. For each new project that needs to access the repository, one must be created form my account dashboard at GitHub. 
+
+h2. How I do it
+
+My local repository is a virtual Ubuntu 11.10 machine running under VMWare. 
