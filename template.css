@@ -1,13 +1,62 @@
 /* begin Page */
 /* Created by Artisteer v3.0.0.41778 */
 
+/*Aligns certain sidebar elements with the navigation bar*/
+.shift{
+position:relative;
+top:1px;
+right:35px;
+}
+
+/*Aligns certain sidebar elements with the navigation bar*/
+.prodimg_shift{
+position:relative;
+top:1px;
+right:49px;
+z-index: -1;
+}
+
+/*Aligns Home Page Main Content with the rest of the page elements*/
+.home{
+margin-left:-53px;
+}
+
+/*Adds Margins to Home Page Header Bottom*/
+.hdr_btm {
+	margin-left: 50px;
+	margin-bottom:-30px;
+	width: 867px;
+}
+
+/*Formating the superscript*/
+.super{
+text-decoration: underline;
+}
+
+/*Resizes the superscript*/
+sup {
+	font-size: 8px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*Removes the underline from the footer links*/
+.footer a:link a:visited
+{
+	text-decoration:none !important;
+	color: #0067AC !important;
+	font-weight: bold;
+}
+
 #art-main, table
 {
-    font-family: Cleavers_Juvenia_Raised,Arial, Helvetica, Sans-Serif;
+    font-family: Arial, Helvetica, Sans-Serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
+	color:#6D6E71;
+	line-height:18px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
@@ -29,6 +78,16 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
   text-align: left;
 }
 
+h5
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px !important;
+  text-align: left;
+  color: #0067AC !important;
+}
+
 .art-postcontent a
 {
   font-family: Arial, Helvetica, Sans-Serif;
@@ -46,7 +105,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
 .art-postcontent a:visited, .art-postcontent a.visited
 {
   text-decoration: none;
-  color: #0068AD;
+  color: #0067AC;
 }
 
 .art-postcontent  a:hover, .art-postcontent a.hover
@@ -308,6 +367,7 @@ table.position
   right: 29px;
   bottom: 29px;
   background-color: #FFFFFF;
+  z-index: -1;
 }
 
 #art-page-background-top-texture, #art-page-background-middle-texture, #art-page-background-glare
@@ -330,7 +390,7 @@ div.art-header
 
 div.art-header-clip
 {
-  position: absolute;
+ /* position: absolute;*/
   width:100%;
   left:0;
   overflow:hidden;
@@ -518,8 +578,8 @@ ul.art-hmenu
 
 .art-nav-l
 {
-  left: 0;
-  right: 0;
+  left: 62px;
+  right: 67px;
 }
 
 .art-nav-r
@@ -1245,7 +1305,7 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
   position: relative;
   min-width: 1px;
   min-height: 1px;
-  margin: 7px;
+  margin: 7px 20px 0 55px;
 }
 
 .art-block-body
@@ -1357,13 +1417,13 @@ div.art-block img
 
 .art-blockcontent-body a:visited, .art-blockcontent-body a.visited
 {
-  color: #0068AD;
+  color: #0067AC;
   text-decoration: none;
 }
 
 .art-blockcontent-body a:hover, .art-blockcontent-body a.hover
 {
-  color: #417E8B;
+  color: #0067AC;
   text-decoration: underline;
 }
 
@@ -1386,7 +1446,7 @@ div.art-block img
 .art-post-body
 {
   position: relative;
-  padding: 10px;
+  padding: 0 0 0 55px;
 }
 
 a img
@@ -1461,13 +1521,13 @@ h2.art-postheader a, h2.art-postheader a:link
 
 h2.art-postheader a:visited, h2.art-postheader a.visited
 {
-  color: #0068AD;
+  color: #0067AC;
 }
 
 h2.art-postheader a:hover,  h2.art-postheader a.hovered
 {
-  text-decoration: underline;
-  color: #417E8B;
+  text-decoration: none;
+  color: #0067AC;
 }
 
 /* end PostHeaderIcon */
@@ -1635,7 +1695,7 @@ h2.art-postheader a:hover,  h2.art-postheader a.hovered
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
 }
 
 .art-footer-body
@@ -1752,7 +1812,7 @@ div.art-footer img
 
 .art-content-layout .art-sidebar1
 {
-  width: 25%;
+  width: 36%;
 }
 
 /* end LayoutCell, sidebar1 */
@@ -2788,6 +2848,25 @@ font-size: 22px;
 .dm_taskbar ul li
 {
   background-image: none;
+}/* Custom styles */
+
+#headermain {width: 942px; height:85px; background-color: #ffffff;/*z-index: 0;*/ margin: 25px,0,0,0;} 
+div.headerleft {position: absolute;
+  z-index: 0;
+  margin-top: 10px;
+  left: 62px;
+  width: 202px;
+  height: 88px;
+  background-image: url('../images/epiceram_logo.jpg');
+  float: left;
+  background-repeat: no-repeat;
+  /*background-position: left;*/} 
+div.headercenter {width: 425px; margin-left: 275px; margin-top: 23px; background-color: #ffffff; height: 88px; float: left; z-index: 0; overflow: hidden; /*margin-right: 30px;*/}
+
+div.headerright {width: 225px; background-color: #ffffff; height: 88px; float: right; z-index: -1; overflow: hidden; /*margin-right: 30px;*/}
+
+.menutitle{
+text-transform:capitalize!important;
 }
 
 /* Custom styles */

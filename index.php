@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template for Joomla! CMS, created with Artisteer.
+ * Template for Joomla! CMS, created by William Rosner - SMART Website Development.
  * See readme.txt for more details on how to use the template.
  */
 
@@ -19,7 +19,7 @@ $templateUrl = $document->baseurl . '/templates/' . $document->template;
 $version = new JVersion();
 $view = $this->artx = ('1.5' == $version->RELEASE) ? new ArtxPage15($this) : new ArtxPage16($this);
 
-// Decorate component with Artisteer style.
+// Decorate component with style.
 $view->componentWrapper();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -51,13 +51,33 @@ $view->componentWrapper();
     <div class="art-sheet-cr"></div>
     <div class="art-sheet-cc"></div>
     <div class="art-sheet-body">
-<div class="art-header">
+<!--<div class="art-header"></div>-->
     <div class="art-header-clip">
     <div class="art-header-center">
-        <div class="art-header-jpeg"></div>
+        <!--<div class="art-header-jpeg">
+    </div>-->
+</div>
+<!-- BEGIN: headermain --> 
+<div id="headermain">
+<!-- BEGIN: headerleft --> 
+<div class="headerleft" > 
+<jdoc:include type="modules" name="headerleft" style="xhtml" /> <a href="http://www.epiceram-us.com"><img src="images/epiceram_logo.jpg" width="202" height="88" border="0"></a>
+</div> 
+<!-- END: headerleft --> 
+<!-- BEGIN: headercenter --> 
+<div class="headercenter"> 
+<jdoc:include type="modules" name="headercenter" style="xhtml" /> 
+</div> 
+<!-- END: headercenter --> 
+<!-- BEGIN: headerright --> 
+<div class="headerright"> 
+<jdoc:include type="modules" name="headerright" style="xhtml" /> 
+</div> 
+<!-- END: headerright --> 
+ </div> 
+<!-- END: headermain -->
     </div>
-    </div>
-<div class="art-headerobject"></div>
+<!--<div class="art-headerobject"></div> -->
 <div class="art-logo">
 </div>
 
@@ -127,7 +147,7 @@ $view->componentWrapper();
                     <?php echo $view->position('copyright', 'art-nostyle'); ?>
                     <?php else: ?>
                     <?php ob_start(); ?>
-<p><a href="#">Link1</a> | <a href="#">Link2</a> | <a href="#">Link3</a></p><p>Copyright © 2011. All Rights Reserved.</p>
+<p></p>
 
                     <?php echo str_replace('%YEAR%', date('Y'), ob_get_clean()); ?>
                     <?php endif; ?>
@@ -140,8 +160,9 @@ $view->componentWrapper();
     </div>
 </div>
 <div class="cleared"></div>
-<p class="art-page-footer"><a href="http://www.artisteer.com/?p=joomla_templates">Joomla template</a> created with Artisteer by <a href="www.SMART-Website-Development.com">William Rosner</a>.</p>
-
+<!-- Add elments below the page here -->
+<p class="art-page-footer"></p>
+<!-- End Add -->
     <div class="cleared"></div>
 </div>
 

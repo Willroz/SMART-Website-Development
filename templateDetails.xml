@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="template" version="1.5">
   <name>epiceram 1_5</name>
-  <creationDate>2011-11-10</creationDate>
+  <creationDate>2011-08-18</creationDate>
   <version>1.5</version>
   <author>William Rosner</author>
   <authorUrl>www.SMART-Website-Development.com</authorUrl>
@@ -115,5 +115,9 @@
     <position>user3</position>
     <position>user4</position>
     <position>user5</position>
+	<position>headerleft</position> 
+	<position>headercenter</position> 
+    <position>headerright</position>
+
   </positions>
 </install>
