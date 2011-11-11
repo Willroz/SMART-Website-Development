@@ -59,8 +59,6 @@ $view->componentWrapper();
     </div>
 <div class="art-headerobject"></div>
 <div class="art-logo">
- <h1 class="art-logo-name"><a href="<?php echo $document->baseurl; ?>/">Enter Site Title</a></h1>
- <h2 class="art-logo-text">Enter Site Slogan</h2>
 </div>
 
 </div>

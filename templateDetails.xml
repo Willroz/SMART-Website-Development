@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="template" version="1.5">
-  <name>epiceram 1_4</name>
+  <name>epiceram 1_5</name>
   <creationDate>2011-11-10</creationDate>
-  <version>1.1</version>
+  <version>1.5</version>
   <author>William Rosner</author>
   <authorUrl>www.SMART-Website-Development.com</authorUrl>
   <description>Custom Joomla! Template created by William Rosner of SMART Website Development</description>

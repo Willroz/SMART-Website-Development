@@ -376,53 +376,9 @@ div.art-logo
 {
   display: block;
   position: absolute;
-  top: 22px;
-  left: 99%;
-  margin-left: -183px;
-}
-
-h1.art-logo-name
-{
-  display: block;
-  text-align: left;
-  font-size: 26px;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  color: #0068AD !important;
-}
-h1.art-logo-name a, 
-h1.art-logo-name a:link, 
-h1.art-logo-name a:visited, 
-h1.art-logo-name a:hover
-{
-  font-size: 26px;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  color: #0068AD !important;
-}
-
-h2.art-logo-text
-{
-  display: block;
-  text-align: left;
-  font-weight: normal;
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-  color: #000000 !important;
-}
-h2.art-logo-text a,
-h2.art-logo-text a:link,
-h2.art-logo-text a:visited,
-h2.art-logo-text a:hover
-{
-  font-weight: normal;
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-  color: #000000 !important;
+  top: 20px;
+  left: 0;
+  margin-left: 0;
 }
 
 /* end Logo */
